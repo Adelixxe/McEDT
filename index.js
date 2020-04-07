@@ -32,7 +32,7 @@ bot.on('message', message => {
     if(jour === 2){
         if(heure === 17){
             if(minutes === 57){
-                Discord.client.channels.get('697131247201288253').send('Il est 19h43(test)')
+                Discord.client.channels.get('697131247201288253').send('Il est 19h57(test)')
                 }
             }
         }
