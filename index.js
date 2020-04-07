@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 var cli = new Discord.Client({autoReconnect:true});
 var date = new Date();
 var jour = date.getDay();
-var heure = date.getHours();
+var heure = date.getHours() + 2;
 var minutes = date.getMinutes();
 var secondes = date.getSeconds();
 
@@ -18,26 +18,16 @@ bot.on('ready', function() {
 bot.on('ready', () =>{
     bot.user.setPresence({ game: {name: " le cours @Adelixxe", type: 2}});
 });
-function actualisation(){
-    var date = new Date();
-    var jour = date.getDay();
-    var heure = date.getHours();
-    var minutes = date.getMinutes();
-    var secondes = date.getSeconds();
-};
-const sleepito = async () => {
-    while(1){
-        actualisation
-        await sleep(500)
-        console.log(jour,':',heure,':',minutes,':',secondes)
-    }
-}
+
 bot.on('message', message => {
+    if (message.content === "*edt"){
+        Discord.client.channels.get('697131247201288253').send("Il est l'heure qu'il est.");
+    }
     if(jour === 2){
         if(heure === 18){
             if(minutes === 9){
                 if(secondes === 0){
-                    Discord.client.channels.get('697131247201288253').send('Il est 20h09(test)')
+                    Discord.client.channels.get('697131247201288253').send('Il est 20h09(test)');
                 }
             }
         }
