@@ -21,6 +21,11 @@ bot.on('ready', () =>{
 
 bot.on('message', message => {
     if (message.content === "*edt"){
+        var date = new Date();
+        var jour = date.getDay();
+        var heure = date.getHours() + 2;
+        var minutes = date.getMinutes();
+        var secondes = date.getSeconds();
         message.channel.send("Il est "+heure+":"+secondes)
     }
 });
