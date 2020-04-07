@@ -6,6 +6,7 @@ var date = new Date();
 var jour = date.getDay();
 var heure = date.getHours();
 var minutes = date.getMinutes();
+var secondes = date.getSeconds();
 
 bot.commands = new Discord.Collection();
 bot.on("error", (e) => console.error(e));
@@ -24,17 +25,21 @@ function actualisation(){
     var heure = date.getHours();
     var minutes = date.getMinutes();
 };
-while(1){
-    actualisation
-    setTimeout(actualisation, 5000);
+const sleepito = async () => {
+    while(1){
+        actualisation
+        await sleep(2000)
+    }
 }
 bot.on('message', message => {
     if(jour === 2){
-        if(heure === 17){
-            if(minutes === 57){
-                Discord.client.channels.get('697131247201288253').send('Il est 19h57(test)')
+        if(heure === 18){
+            if(minutes === 4){
+                if(secondes === 0){
+                    Discord.client.channels.get('697131247201288253').send('Il est 19h57(test)')
                 }
             }
         }
+    }
 });
 bot.login(process.env.BOT_TOKEN);
