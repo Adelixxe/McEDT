@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const channel = bot.channels.find('edt', channelName)
 
 var cli = new Discord.Client({autoReconnect:true});
 var date = new Date();
@@ -22,8 +21,8 @@ bot.on('ready', () =>{
 bot.on('message', message => {
     if(jour === 2){
         if(heure === 19){
-            if(minutes === 35){
-                channel.send("C'est l'heure de la Physique ! Rendez-vous dans le channel Cours :D");
+            if(minutes === 40){
+                Discord.client.channels.get('697131247201288253').send('Il est 19h40 (test)')
                 }
             }
         }
