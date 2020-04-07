@@ -21,14 +21,15 @@ bot.on('ready', () =>{
 
 bot.on('message', message => {
     if (message.content === "*edt"){
-        bot.channels.get('697131247201288253').send("Il est l'heure qu'il est.");
-    }
-    if(jour === 2){
-        if(heure === 20){
-            if(minutes === 27){
-                if(secondes === 0){
-                    bot.channels.get("ChannelID").send('Il est 20h09(test)');
-                }
+        while(1){
+            if(jour === 2){
+                if(heure === 20){
+                    if(minutes === 34){
+                        if(secondes === 0){
+                            message.channel.send("il est 20h34.")
+                        }
+                    }
+                }   
             }
         }
     }
