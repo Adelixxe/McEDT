@@ -15,7 +15,6 @@ bot.on("debug", (e) => console.info(e));
 bot.on('ready', function() {
     console.log(" McEDT")
 });
-fonction
 bot.on('ready', () =>{
     bot.user.setPresence({ game: {name: " le cours @Adelixxe", type: 2}});
 });
