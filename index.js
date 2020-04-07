@@ -21,17 +21,7 @@ bot.on('ready', () =>{
 
 bot.on('message', message => {
     if (message.content === "*edt"){
-        while(1){
-            if(jour === 2){
-                if(heure === 20){
-                    if(minutes === 34){
-                        if(secondes === 0){
-                            message.channel.send("il est 20h34.")
-                        }
-                    }
-                }   
-            }
-        }
+        message.channel.send("Il est "+heure+":"+secondes)
     }
 });
 bot.login(process.env.BOT_TOKEN);
