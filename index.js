@@ -22,7 +22,7 @@ bot.on('ready', () =>{
 bot.on('message', message => {
     if(jour === 2){
         if(heure === 19){
-            if(minutes === 30){
+            if(minutes === 35){
                 channel.send("C'est l'heure de la Physique ! Rendez-vous dans le channel Cours :D");
                 }
             }
