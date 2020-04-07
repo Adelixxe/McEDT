@@ -27,7 +27,7 @@ function actualisation(){
 const sleepito = async () => {
     while(1){
         actualisation
-        await sleep(2000)
+        await sleep(500)
     }
 }
 bot.on('message', message => {
