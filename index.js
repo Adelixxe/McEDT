@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const channel = client.channels.find('edt', channelName)
+const channel = bot.channels.find('edt', channelName)
 
 var cli = new Discord.Client({autoReconnect:true});
 var date = new Date();
