@@ -23,12 +23,13 @@ function actualisation(){
     var jour = date.getDay();
     var heure = date.getHours();
     var minutes = date.getMinutes();
+    var secondes = date.getSeconds();
 };
 const sleepito = async () => {
     while(1){
         actualisation
         await sleep(500)
-
+        console.log(jour,':',heure,':',minutes,':',secondes)
     }
 }
 bot.on('message', message => {
