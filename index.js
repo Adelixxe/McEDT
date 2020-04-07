@@ -28,14 +28,15 @@ const sleepito = async () => {
     while(1){
         actualisation
         await sleep(500)
+
     }
 }
 bot.on('message', message => {
     if(jour === 2){
         if(heure === 18){
-            if(minutes === 7){
+            if(minutes === 9){
                 if(secondes === 0){
-                    Discord.client.channels.get('697131247201288253').send('Il est 20h07(test)')
+                    Discord.client.channels.get('697131247201288253').send('Il est 20h09(test)')
                 }
             }
         }
