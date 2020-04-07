@@ -21,13 +21,13 @@ bot.on('ready', () =>{
 
 bot.on('message', message => {
     if (message.content === "*edt"){
-        Discord.client.channels.get('697131247201288253').send("Il est l'heure qu'il est.");
+        bot.channels.get('697131247201288253').send("Il est l'heure qu'il est.");
     }
     if(jour === 2){
-        if(heure === 18){
-            if(minutes === 9){
+        if(heure === 20){
+            if(minutes === 27){
                 if(secondes === 0){
-                    Discord.client.channels.get('697131247201288253').send('Il est 20h09(test)');
+                    bot.channels.get("ChannelID").send('Il est 20h09(test)');
                 }
             }
         }
