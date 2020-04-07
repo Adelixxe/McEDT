@@ -26,12 +26,12 @@ function actualisation(){
 };
 while(1){
     actualisation
-    await sleep(5000);
+    setTimeout(actualisation, 5000);
 }
 bot.on('message', message => {
     if(jour === 2){
         if(heure === 17){
-            if(minutes === 56){
+            if(minutes === 57){
                 Discord.client.channels.get('697131247201288253').send('Il est 19h43(test)')
                 }
             }
